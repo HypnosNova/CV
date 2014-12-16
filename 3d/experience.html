@@ -1,0 +1,65 @@
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script src="js/jquery-1.7.1.min.js"></script>
+
+		<script src="js/three66.min.js"></script>
+		<script src="js/flipbook.preview.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				var options = {
+					pages: [{
+						src: "images/book2/fp.jpg",
+						thumb: "img/front.jpg",
+						title: "Cover"
+					}, {
+						src: "images/book2/p1.jpg",
+						thumb: "img/tmp.jpg",
+						title: "Page two"
+					}, {
+						src: "images/book2/p2.jpg",
+						thumb: "img/tmp.jpg",
+						title: "Page three"
+					}, {
+						src: "images/book2/p3.jpg",
+						thumb: "img/front.jpg",
+						title: "Page 4"
+					}, {
+						src: "images/book2/p4.jpg",
+						thumb: "img/front.jpg",
+						title: "Page 5"
+					}, {
+						src: "images/book2/back.jpg",
+						thumb: "img/front.jpg",
+						title: "End"
+					}],
+					lightBox: false,
+					webgl: true,
+					skin: "light",
+					tilt: -10,
+					zoom: .9,
+					downloadPdfUrl: "book2.pdf"
+				};
+
+				$("#book1").flipBook(options);
+			})
+		</script>
+
+	</head>
+
+	<body>
+		<div id="book1">
+
+
+		</div>
+	</body>
+
+</html>
